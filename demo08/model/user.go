@@ -3,11 +3,11 @@ package model
 import (
 	"fmt"
 
-	validator "gopkg.in/go-playground/validator.v9"
+	"gopkg.in/go-playground/validator.v9"
 
-	"yannotes.cn/apiserver_demos/demo07/pkg/auth"
+	"yannotes.cn/apiserver_demos/demo08/pkg/auth"
 
-	"yannotes.cn/apiserver_demos/demo07/pkg/constvar"
+	"yannotes.cn/apiserver_demos/demo08/pkg/constvar"
 )
 
 type UserModel struct {

@@ -3,15 +3,15 @@ package user
 import (
 	"strconv"
 
-	. "yannotes.cn/apiserver_demos/demo07/handler"
-	"yannotes.cn/apiserver_demos/demo07/pkg/errno"
+	. "yannotes.cn/apiserver_demos/demo08/handler"
+	"yannotes.cn/apiserver_demos/demo08/pkg/errno"
 
-	"yannotes.cn/apiserver_demos/demo07/model"
+	"yannotes.cn/apiserver_demos/demo08/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/lexkong/log"
 	"github.com/lexkong/log/lager"
-	"yannotes.cn/apiserver_demos/demo07/util"
+	"yannotes.cn/apiserver_demos/demo08/util"
 )
 
 func Update(c *gin.Context) {

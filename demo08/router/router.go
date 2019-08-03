@@ -3,17 +3,17 @@ package router
 import (
 	"net/http"
 
-	"yannotes.cn/apiserver_demos/demo07/handler/user"
+	"yannotes.cn/apiserver_demos/demo08/handler/user"
 
-	"yannotes.cn/apiserver_demos/demo07/handler/sd"
+	"yannotes.cn/apiserver_demos/demo08/handler/sd"
 
 	"github.com/gin-gonic/gin"
-	"yannotes.cn/apiserver_demos/demo07/router/middleware"
+	"yannotes.cn/apiserver_demos/demo08/router/middleware"
 )
 
 // Load loads the middlewares, routes, handlers.
 func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
-	// Middlewares
+	// Middlewares 全局中间件
 	g.Use(gin.Recovery())
 	g.Use(middleware.NoCache)
 	g.Use(middleware.Options)
@@ -26,6 +26,7 @@ func Load(g *gin.Engine, mw ...gin.HandlerFunc) *gin.Engine {
 	})
 
 	u := g.Group("/v1/user")
+	//u.Use(middleware.AuthMiddleware()) //群组中间件
 	{
 		u.POST("/", user.Create)      //// 创建用户
 		u.DELETE("/:id", user.Delete) // 删除用户

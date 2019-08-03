@@ -1,19 +1,13 @@
 package user
 
 import (
-	"yannotes.cn/apiserver_demos/demo07/model"
-
-	"yannotes.cn/apiserver_demos/demo07/util"
-
-	"github.com/lexkong/log/lager"
-
-	. "yannotes.cn/apiserver_demos/demo07/handler"
-
-	"github.com/lexkong/log"
-
-	"yannotes.cn/apiserver_demos/demo07/pkg/errno"
-
 	"github.com/gin-gonic/gin"
+	"github.com/lexkong/log"
+	"github.com/lexkong/log/lager"
+	. "yannotes.cn/apiserver_demos/demo08/handler"
+	"yannotes.cn/apiserver_demos/demo08/model"
+	"yannotes.cn/apiserver_demos/demo08/pkg/errno"
+	"yannotes.cn/apiserver_demos/demo08/util"
 )
 
 // Create creates a new user account

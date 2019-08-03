@@ -2,9 +2,9 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
-	. "yannotes.cn/apiserver_demos/demo07/handler"
-	"yannotes.cn/apiserver_demos/demo07/model"
-	"yannotes.cn/apiserver_demos/demo07/pkg/errno"
+	. "yannotes.cn/apiserver_demos/demo08/handler"
+	"yannotes.cn/apiserver_demos/demo08/model"
+	"yannotes.cn/apiserver_demos/demo08/pkg/errno"
 )
 
 func Get(c *gin.Context) {
