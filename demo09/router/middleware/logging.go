@@ -9,11 +9,11 @@ import (
 
 	"github.com/willf/pad"
 
-	"yannotes.cn/apiserver_demos/demo08/pkg/errno"
+	"yannotes.cn/apiserver_demos/demo09/pkg/errno"
 
 	"github.com/lexkong/log"
 
-	"yannotes.cn/apiserver_demos/demo08/handler"
+	"yannotes.cn/apiserver_demos/demo09/handler"
 
 	"github.com/gin-gonic/gin"
 )
